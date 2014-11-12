@@ -12,6 +12,5 @@ sender.o:	 sender.cpp
 recv.o:	recv.cpp
 	g++ -c recv.cpp
 
-
 clean:
 	rm -rf *.o sender recv 
