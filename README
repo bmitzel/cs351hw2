@@ -6,7 +6,9 @@ Compiling:
 	make (or gmake)
 
 Running:
+(From one terminal window)
 	./recv
+(From a second terminal window)
 	./sender <filename>
 		filename: The name of the file to send
 
