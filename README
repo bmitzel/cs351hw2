@@ -1,0 +1,17 @@
+Author: Brian Mitzel
+Email: bmitzel@csu.fullerton.edu
+Language: C++
+
+Compiling:
+	make (or gmake)
+
+Running:
+	./recv
+	./sender <filename>
+		filename: The name of the file to send
+
+Extra Credit:
+	Not yet implemented
+
+Other Notes:
+	None
