@@ -78,7 +78,6 @@ void cleanUp(const int& shmid, const int& msqid, void* sharedMemPtr)
 		perror("shmdt");
 		exit(-1);
 	}
-
 }
 
 /**
@@ -161,7 +160,7 @@ unsigned long sendFile(const char* fileName)
  */
 void sendFileName(const char* fileName)
 {
-	/* Get and validate the length of the file name */
+	/* Get the length of the file name */
 	int fileNameSize = strlen(fileName);
 
 	/* Validate the length of the file name */
@@ -188,6 +187,7 @@ void sendFileName(const char* fileName)
  * Begins program execution
  * @param  argc The number of command line arguments
  * @param  argv An array of C strings containing each command line argument
+ * @return The exit code
  */
 int main(int argc, char** argv)
 {

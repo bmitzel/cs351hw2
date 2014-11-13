@@ -122,7 +122,6 @@ unsigned long mainLoop(const char* fileName)
  	 */	
 	while (msgSize != 0)
 	{	
-
 		/* Receive the message and get the value of the size field. The message will be of
 		 * of type SENDER_DATA_TYPE. That is, a message that is an instance of the message struct
 		 * with mtype field set to SENDER_DATA_TYPE (the macro SENDER_DATA_TYPE is defined in
@@ -219,12 +218,14 @@ void ctrlCSignal(int signal)
 {
 	/* Free system V resources */
 	cleanUp(shmid, msqid, sharedMemPtr);
+	exit(-1);
 }
 
 /**
  * Begins program execution
  * @param  argc The number of command line arguments
  * @param  argv An array of C strings containing each command line argument
+ * @return The exit code
  */
 int main(int argc, char** argv)
 {

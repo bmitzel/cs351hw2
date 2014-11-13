@@ -5,15 +5,22 @@ Language: C++
 Compiling:
 	make (or gmake)
 
-Running:
+Running the normal versions:
 (From one terminal window)
 	./recv
 (From a second terminal window)
 	./sender <filename>
 		filename: The name of the file to send
 
+Running the extra credit versions:
+(From one terminal window)
+	./recv_ec
+(From a second terminal window)
+	./sender_ec <filename>
+		filename: The name of the file to send
+
 Extra Credit:
-	Not yet implemented
+	Fully implemented
 
 Other Notes:
 	None
